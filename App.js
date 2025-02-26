@@ -5,7 +5,7 @@ import { AppState } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import ListScreen from "./screens/ListScreen";
-
+import showTaskScreen from "./screens/showTaskScreen";
 import ContactSupportScreen from "./screens/contactSupport";
 const Stack = createStackNavigator();
 
@@ -19,6 +19,7 @@ export default function App() {
           cardStyle: { backgroundColor: "#fff" },
         }}
       >
+        <Stack.Screen name="showTaskScreen" component={showTaskScreen}/>
         <Stack.Screen name="ListScreen" component={ListScreen} />
         <Stack.Screen name="ContactSupport" component={ContactSupportScreen} />
       </Stack.Navigator>
