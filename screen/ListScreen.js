@@ -49,6 +49,12 @@ const ListScreen = ({ navigation }) => {
       />
       <Button
         style={styles.button}
+        onPress={() => navigation.navigate("notificationScreen")}
+      >
+        Go to Task 4-- Notifications
+      </Button>
+      <Button
+        style={styles.button}
         onPress={() => navigation.navigate("ContactSupport")}
       >
         Go to Task 3 - Linking API
