@@ -68,9 +68,10 @@ const notificationScreen = () => {
       },
       trigger: { seconds: 1 },
     });
+    console.log("Advance notification has been sent")
   };
   return (
-    <view>
+    <View style={styles.container}>
       <Text style={styles.title}>Notifications</Text>
       <Text style={styles.paragraph}>
         Demonstrate the Implementation of Notification in React Native
@@ -93,7 +94,7 @@ const notificationScreen = () => {
       >
         <Text style={styles.buttonText}>Advanced Notification</Text>
       </TouchableOpacity>
-    </view>
+    </View>
   );
 };
 const styles = StyleSheet.create({
